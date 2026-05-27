@@ -43,7 +43,7 @@ jobs:
 
       - name: Update deployment.yaml
         run: |
-          sed -i "s|image: .*|image: miroslava123/flask-app:${IMAGE_TAG}|g" k8s/deployment.yaml
+          sed -i "s|image: .*|image: miroslavaskl126/flask-app:${IMAGE_TAG}|g" k8s/deployment.yaml
 
       - name: Configure Git
         run: |
