@@ -21,7 +21,7 @@ spec:
       containers:
         - name: flask-app
 
-          image: miroslavaskl126/flask-app:ada27c3c83e05c9299319cafd04b32bfc3131914
+          image: miroslavaskl126/flask-app:466223066ad531ce3e94c90875e4f894ffe18049
 
           imagePullPolicy: Always
 
