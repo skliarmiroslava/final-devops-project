@@ -14,7 +14,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
     
       - name: Build docker image
-        run: docker build -t miroslava126/flask-app:${{ github.sha }} ./app
+        run: docker build -t miroslavaskl126/flask-app:${{ github.sha }} ./app
 
       - name: Push docker image to DockerHub
-        run: docker push  miroslava126/flask-app:${{ github.sha }}
+        run: docker push  miroslavaskl126/flask-app:${{ github.sha }}
