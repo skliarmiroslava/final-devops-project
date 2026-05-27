@@ -1,0 +1,11 @@
+server:
+  ingress:
+    enabled: true
+
+    ingressClassName: nginx
+
+    hostname: argocd.miroslava.devops12.test-danit.com
+
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: argocd.miroslava.devops12.test-danit.com
+      nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
