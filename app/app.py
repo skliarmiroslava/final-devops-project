@@ -1,6 +1,8 @@
+from flask import Flask, jsonify  #take Flask class from flask library
+
 import socket  #Python module for networking(get name pods/container)
 
-from flask import Flask, jsonify  #take Flask class from flask library
+import os
 
 app = Flask(__name__) #create main web application)
 
@@ -8,12 +10,11 @@ app = Flask(__name__) #create main web application)
 
 def home():
     hostname = socket.gethostname()
-    ip_address = socket.gethostbyname(hostname)
+    version = os.getenv("VERSION", "unknown")
     return jsonify ({
         "status" : "running",
         "hostname": hostname,  #return hostname_container
-        "ip_pod": ip_address,  #return ip pod
-        "version": "1.0"
+        "version": version
     }), 200
 
 @app.route("/health")
