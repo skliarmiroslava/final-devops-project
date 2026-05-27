@@ -27,3 +27,7 @@ spec:
 
           ports:
             - containerPort: 5000
+          
+          env:
+            - name: VERSION 
+              value: "IMAGE_TAG"
