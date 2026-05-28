@@ -21,7 +21,7 @@ spec:
       containers:
         - name: flask-app
 
-          image: miroslavaskl126/flask-app:0d070e30dc794f29b65bc6340c7f956d273fda5f
+          image: miroslavaskl126/flask-app:73a3e591ba7789261e8ae55e9076d11066637988
 
           imagePullPolicy: Always
 
@@ -30,4 +30,4 @@ spec:
           
           env:
             - name: VERSION 
-              value: "0d070e30dc794f29b65bc6340c7f956d273fda5f"
+              value: "73a3e591ba7789261e8ae55e9076d11066637988"
